@@ -42,7 +42,8 @@ func main() {
 	s := server.NewMCPServer(
 		"ultimarr",
 		"1.0.0",
-		server.WithToolCapabilities(false),
+		server.WithToolCapabilities(true),
+		server.WithInstructions("MCP server for the *arr stack - control Jellyseerr, Sonarr, and Radarr. Use jellyseerr_* tools to search and request media, sonarr_* tools to manage TV series, and radarr_* tools to manage movies."),
 	)
 
 	// Register Jellyseerr tools
